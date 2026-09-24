@@ -1,4 +1,4 @@
-# PABW - SATRIO DAMAR RAMADHAN - [2152]
+# PABW - SATRIO DAMAR RAMADHAN - [21525080]
 
 Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web.
 
@@ -13,4 +13,4 @@ Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web.
 - **Gambar:** koleksi-buku.webp
 
 ## Catatan penggunaan AI
-Bagian penyiapan kerangka semantik HTML5, struktur tabel, dan contoh elemen form dibantu oleh AI (Gemini). Pengisian data pribadi, pemilihan topik, penyesuaian ID/href, serta uji coba mandiri dilakukan sendiri.
+Bagian penyiapan kerangka semantik HTML5, dan contoh elemen form dibantu oleh AI (Gemini). Pengisian data pribadi, pemilihan topik, penyesuaian ID/href, struktur tabel, serta uji coba mandiri dilakukan sendiri.
