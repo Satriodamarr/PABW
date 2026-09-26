@@ -1,4 +1,3 @@
-/* Header & Navbar Flexbox */
 header {
   padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-border);
@@ -29,7 +28,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Container Utama */
 main {
   display: flex;
   flex-direction: column;
@@ -37,7 +35,6 @@ main {
   padding-block: var(--space-6);
 }
 
-/* Katalog Kartu Responsif */
 .katalog {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +50,6 @@ main {
   padding: var(--card-pad);
 }
 
-/* Footer */
 footer {
   margin-top: var(--space-6);
   padding-block: var(--space-4);

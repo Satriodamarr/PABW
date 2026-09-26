@@ -1,11 +1,9 @@
-/* Pengalih Tema Sembunyi */
 .pengalih-tema {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* 1. Tema Gelap Otomatis jika OS Pengguna set Gelap */
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: var(--gray-900);
@@ -18,7 +16,6 @@
     --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.45);
   }
 
-  /* Jika OS Gelap DAn checkbox DI-CENTANG -> Paksa Pindah ke Tema Terang */
   :root:has(#tema:checked) {
     --color-bg: var(--gray-50);
     --color-fg: var(--gray-900);
@@ -31,7 +28,6 @@
   }
 }
 
-/* 2. Jika OS Pengguna set Terang DAN checkbox DI-CENTANG -> Paksa Pindah ke Tema Gelap */
 @media (prefers-color-scheme: light) {
   :root:has(#tema:checked) {
     --color-bg: var(--gray-900);

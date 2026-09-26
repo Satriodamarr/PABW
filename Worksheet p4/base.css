@@ -1,4 +1,3 @@
-/* Reset ringan & Box Sizing Global */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -14,7 +13,6 @@ img {
   border-radius: var(--radius-md);
 }
 
-/* Tipografi & Pengaturan Halaman */
 html {
   font-size: 100%;
 }
