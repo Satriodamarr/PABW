@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  
+  <!-- Pemanggilan 5 Berkas CSS -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+
+  <!-- Input Checkbox Pengalih Tema -->
+  <input type="checkbox" id="tema" class="pengalih-tema">
+
+  <!-- Header & Navigasi -->
+  <header>
+    <div class="header-baris">
+      <h1>Profil Saya</h1>
+      
+      <!-- Tombol Switch Tema -->
+      <label for="tema" class="tombol-tema">
+        🌗 Ubah Tema
+      </label>
+
+      <nav>
+        <ul>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+
+    <!-- Bagian 1: Tentang -->
+    <section id="tentang" class="kartu">
+      <h2>Satrio Damar Ramadhan</h2>
+      <p>Mahasiswa Informatika Universitas Islam Indonesia yang sedang menyelesaikan modul PABW Pertemuan 4 tentang CSS Fundamental & Design Token.</p>
+      <img src="gambar-saya.svg" alt="Foto Profil Satrio Damar Ramadhan" width="200" height="200">
+    </section>
+
+    <!-- Bagian 2: Katalog Proyek -->
+    <section id="katalog">
+      <h2>Katalog Proyek & Data</h2>
+      <div class="katalog">
+        <article class="kartu">
+          <h3>Proyek 1: SPK AHP & SAW</h3>
+          <p>Sistem Pendukung Keputusan berbasis web Laravel untuk pemeringkatan data.</p>
+        </article>
+        <article class="kartu">
+          <h3>Proyek 2: Web KKN Tematik</h3>
+          <p>Profil Kalurahan Tirtonirmolo dengan pemetaan sampah dan rest area.</p>
+        </article>
+        <article class="kartu">
+          <h3>Proyek 3: FPL Stat Ranker</h3>
+          <p>Aplikasi pelacak data pemain dan statistik Fantasy Premier League.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Bagian 3: Formulir Kontak -->
+    <section id="kontak" class="kartu">
+      <h2>Formulir Kontak</h2>
+      <form action="#" method="post" class="form-katalog">
+        
+        <div class="form-kolom">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+          <span class="pesan-galat">Nama tidak boleh kosong.</span>
+        </div>
+
+        <div class="form-kolom">
+          <label for="email">Alamat Email</label>
+          <input type="email" id="email" name="email" required placeholder="contoh@domain.com">
+          <span class="pesan-galat">Format email tidak valid.</span>
+        </div>
+
+        <div class="form-kolom">
+          <label for="pesan">Pesan / Masukan</label>
+          <textarea id="pesan" name="pesan" rows="4" required placeholder="Tuliskan pesan Anda..."></textarea>
+          <span class="pesan-galat">Pesan wajib diisi.</span>
+        </div>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Satrio Damar Ramadhan. Pengembangan Aplikasi Berbasis Web UII.</p>
+  </footer>
+
+</body>
+</html>

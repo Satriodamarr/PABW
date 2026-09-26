@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Buku Saya - Profil Koleksi Pribadi</title>
+</head>
+<body>
+
+  <header>
+    <h1>Rak Buku Saya</h1>
+    <p>Selamat datang di halaman koleksi buku bacaan pribadi saya.</p>
+    
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#daftar-buku">Daftar Buku</a></li>
+        <li><a href="#tambah-buku">Tambah Buku</a></li>
+        <li><a href="#tentang-saya">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section id="daftar-buku">
+      <h2>Daftar Koleksi Buku</h2>
+      
+      <figure>
+        <img src="koleksi-buku.jpg" 
+             alt="Tumpukan buku novel dan pelajaran di atas rak kayu" 
+             width="640" 
+             height="360" 
+             loading="lazy">
+        <figcaption>Koleksi fisik buku yang tersimpan di kamar saya.</figcaption>
+      </figure>
+
+      <table>
+        <caption>Katalog Buku yang Pernah Dibaca</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul Buku</th>
+            <th scope="col">Penulis</th>
+            <th scope="col">Tahun Terbit</th>
+            <th scope="col">Status Baca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Laskar Pelangi</th>
+            <td>Andrea Hirata</td>
+            <td>2005</td>
+            <td>Selesai Dibaca</td>
+          </tr>
+          <tr>
+            <th scope="row">Bumi</th>
+            <td>Tere Liye</td>
+            <td>2014</td>
+            <td>Selesai Dibaca</td>
+          </tr>
+          <tr>
+            <th scope="row">Atomic Habits</th>
+            <td>James Clear</td>
+            <td>2018</td>
+            <td>Sedang Dibaca</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tambah-buku">
+      <h2>Tambah Buku Baru</h2>
+      <form action="/simpan" method="post">
+        <p>
+          <label for="judul-buku">Judul Buku:</label>
+          <input type="text" id="judul-buku" name="judul-buku" required>
+        </p>
+        <p>
+          <label for="penulis-buku">Penulis:</label>
+          <input type="text" id="penulis-buku" name="penulis-buku" required>
+        </p>
+        <p>
+          <label for="tahun-terbit">Tahun Terbit:</label>
+          <input type="number" id="tahun-terbit" name="tahun-terbit" min="1900" max="2026" required>
+        </p>
+        <p>
+          <label for="status-baca">Status Baca:</label>
+          <select id="status-baca" name="status-baca" required>
+            <option value="">-- Pilih Status --</option>
+            <option value="selesai">Selesai Dibaca</option>
+            <option value="sedang">Sedang Dibaca</option>
+            <option value="rencana">Rencana Dibaca</option>
+          </select>
+        </p>
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+
+    <section id="tentang-saya">
+      <h2>Tentang Pemilik</h2>
+      <p>Halaman ini dikelola oleh Satrio Damar Ramadhan sebagai bagian dari tugas mata kuliah PABW 2026/2027.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Satrio Damar Ramadhan | 21523080 | 2026</p>
+  </footer>
+
+</body>
+</html>
