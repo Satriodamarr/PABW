@@ -27,3 +27,9 @@ Bagian penyiapan kerangka semantik HTML5, dan contoh elemen form dibantu oleh AI
   5. `tema.css` - Fitur Dark Mode berbasis custom property dan `:has()`
 - **Fitur Spesial**: Toggle tema gelap/terang tanpa JavaScript, responsif Flexbox, dan validasi form
 - **Gambar**: `gambar-saya.svg`
+
+## Meeting 9: DOM, Events, and Interactivity
+
+### AI Disclosure
+- **Assisted by AI:** Konsultasi struktur logika DOM, penanganan event delegation, serta format validasi form.
+- **Done by Myself:** Mengetik seluruh kode, menyesuaikan struktur HTML/CSS dengan project Meeting 8, menguji selector di console, serta mengunggah kode ke repository GitHub.
