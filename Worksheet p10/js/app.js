@@ -41,3 +41,40 @@ console.log("Proyek yang Sudah Selesai (.filter):", proyekSelesai);
 
 const cariProyek = daftarProyek.find(proyek => proyek.id === 2);
 console.log("Pencarian Proyek (.find):", cariProyek);
+
+import { fetchNews } from './api.js';
+
+const container = document.querySelector('#list');
+
+function render(list) {
+  container.textContent = '';
+  list.forEach(function (n) {
+    const card = document.createElement('article');
+    const heading = document.createElement('h3');
+    heading.textContent = n.title;
+    card.appendChild(heading);
+    container.appendChild(card);
+  });
+}
+
+async function initApp() {
+  container.textContent = 'Memuat data...';
+
+  try {
+    const data = await fetchNews();
+
+    if (!data || data.length === 0) {
+      container.textContent = 'Belum ada data yang tersedia.';
+      return;
+    }
+
+    console.log('Data berhasil dimuat di app.js:', data);
+    render(data);
+
+  } catch (error) {
+    console.error('Gagal memuat:', error);
+    container.textContent = 'Gagal memuat data: ' + error.message;
+  }
+}
+
+initApp();
