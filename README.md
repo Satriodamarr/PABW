@@ -41,7 +41,7 @@ Bagian penyiapan kerangka semantik HTML5, dan contoh elemen form dibantu oleh AI
 
 ---
 
-## 📌 Deskripsi Tugas
+## Deskripsi Tugas
 Modul ini berfokus pada implementasi *Asynchronous JavaScript* menggunakan `fetch`, `Promise`, `async/await`, dan penanganan data `JSON`. Aplikasi dipisahkan menjadi dua *layer*:
 1. **Data Layer (`js/api.js`)**: Bertanggung jawab melakukan pemanggilan `fetch` ke API publik, memeriksa `response.ok`, dan mengembalikan data JSON.
 2. **Presentation Layer (`js/app.js`)**: Bertanggung jawab memanggil fungsi dari `api.js` dan merender data ke halaman web profil beserta penanganan 4 *interface states*.
