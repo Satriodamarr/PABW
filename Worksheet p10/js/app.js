@@ -48,11 +48,19 @@ const container = document.querySelector('#list');
 
 function render(list) {
   container.textContent = '';
+  
   list.forEach(function (n) {
     const card = document.createElement('article');
+    card.classList.add('news-card');
+
     const heading = document.createElement('h3');
     heading.textContent = n.title;
+
+    const bodyText = document.createElement('p');
+    bodyText.textContent = n.body;
+
     card.appendChild(heading);
+    card.appendChild(bodyText);
     container.appendChild(card);
   });
 }
