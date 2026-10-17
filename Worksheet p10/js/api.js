@@ -2,6 +2,8 @@ const URL = 'https://jsonplaceholder.typicode.com/posts';
 
 export async function fetchNews() {
   try {
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
     const response = await fetch(URL);
     console.log('status', response.status, 'ok', response.ok);
     
